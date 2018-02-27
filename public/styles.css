@@ -1,0 +1,47 @@
+body {
+    background-color: green;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    width: 40%;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardTop {
+    height: 100px;
+    padding: 20px;
+}
+
+.cardMiddle {
+    height: 300px;
+    text-align: center;
+ }
+ 
+h1 {
+    font-weight: bold;
+    font-size: 100px;
+}
+
+.cardBottom {
+    height: 100px;
+    transform: rotate(-180deg);
+    padding: 20px;
+}
+
+span {
+    font-weight: bold;
+    font-size: 50px;
+}
+.black {
+    color: black;
+}
+.red {
+    color: red;
+}
