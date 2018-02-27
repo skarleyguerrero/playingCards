@@ -75,13 +75,6 @@ var suitArr = ["&#9827;","&#9824;","&#9830;","&#9829;"];
 var num = Math.floor(Math.random() * 12);
 var suit = Math.floor(Math.random() * 4);
 
-/*if (suit == 0 || suit == 1) {
-document.querySelector("#middle").style.color = "black";
-}
-if (suit == 2 || suit == 3) {
-document.querySelector("#middle").style.color = "#FF0000";
-}*/
-
 var numbers = document.querySelectorAll("span");
 for (var i = 0, max = numbers.length; i < max; i++) {
     numbers[i].innerHTML = numArr[num];
@@ -89,17 +82,18 @@ for (var i = 0, max = numbers.length; i < max; i++) {
 
 document.querySelector("h1").innerHTML = suitArr[suit];
 
-function setColor (color) {
+function setColor (AddColor,ReColor) {
     numbers = document.querySelectorAll("#color");
     for (var i = 0, max = numbers.length; i < max; i++) {
-    numbers[i].classList.toggle(color);
+    numbers[i].classList.remove(ReColor);
+    numbers[i].classList.add(AddColor);
 }}
 
 if (suit == 0 || suit == 1) {
-    setColor("black");
-    }
+    setColor("black","red");
+}
 else {
-    setColor("red");
+    setColor("red","black");
 }
 
 

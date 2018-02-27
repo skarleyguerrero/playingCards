@@ -13,16 +13,17 @@ for (var i = 0, max = numbers.length; i < max; i++) {
 
 document.querySelector("h1").innerHTML = suitArr[suit];
 
-function setColor (color) {
+function setColor (AddColor,ReColor) {
     numbers = document.querySelectorAll("#color");
     for (var i = 0, max = numbers.length; i < max; i++) {
-    numbers[i].classList.toggle(color);
+    numbers[i].classList.remove(ReColor);
+    numbers[i].classList.add(AddColor);
 }}
 
 if (suit == 0 || suit == 1) {
-    setColor("black");
+    setColor("black","red");
 }
 else {
-    setColor("red");
+    setColor("red","black");
 }
 
